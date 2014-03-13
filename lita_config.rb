@@ -39,6 +39,12 @@ Lita.configure do |config|
         /.*/ => "#repose"
     }
 
+    config.handlers.github_commits.repos = {
+      "rackerlabs/repose" => "#repose",
+      "rackerlabs/repose-infrastructure-management" => "#repose",
+      "rackerlabs/repose-irc-bot" => "#repose"
+    }
+
   ## Example: Set options for the Redis connection.
   # config.redis.host = "127.0.0.1"
   # config.redis.port = 1234
